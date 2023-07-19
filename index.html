@@ -10,18 +10,29 @@
     /* 
     PROBLEM 1: Using a for loop, print to the console the numbers 1-10 with the string "Mississippi" after each number. e.g. "1 Mississippi", "2 Mississippi", etc.
     */
-    //ENTER YOUR CODE HERE
+    for (let i = 1; i < 11; i++) {
+      console.log(i, 'Mississippi');
+    }
 
     /* 
     PROBLEM 2: Using a for loop, iterate over each item in the 'numbers' array and print any number that even
     */
     let numbers = [ 15, 24, 8, 32, 15, 27, 64, 7, 82, 22, 12, 15 ];
-    //ENTER YOUR CODE HERE
+    for (let i = 0; i < numbers.length; i++) {
+      if (numbers[i] % 2 === 0) { // check if even number
+        console.log(numbers[i]);
+      }
+    }
 
     /* 
     PROBLEM 3: Using a for loop, replace all occurences of 15 in the array 'numbers' with null. Log 'numbers' to the console
     */
-    //ENTER YOUR CODE HERE
+    for (let i = 0; i < numbers.length; i++) {
+      if (numbers[i] === 15) { // check if number = 15
+        numbers[i] = null; // reassign 15 to null
+        console.log(numbers);
+      }
+    }
 
     /* 
     PROBLEM 4: Use a for loop to join the steps in the array 'steps' to form a string containing all the steps. console.log the string created
